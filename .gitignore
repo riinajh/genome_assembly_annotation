@@ -1,4 +1,4 @@
 *.gff
 *.gff3
 *.fasta
-\.ipynb_checkpoints
+.ipynb_checkpoints/
