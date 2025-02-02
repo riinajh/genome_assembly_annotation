@@ -1,0 +1,364 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+
+#SEPARATOR TAB
+#SEPARATOR COMMA
+SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL label1
+
+#dataset color (can be changed later)
+COLOR #ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+COLOR_BRANCHES 0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#To order legend entries horizontally instead of vertically, set LEGEND_HORIZONTAL to 1
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE Dataset_legend
+#LEGEND_SCALE 1
+#LEGEND_POSITION_X 100
+#LEGEND_POSITION_Y 100
+#LEGEND_HORIZONTAL 0
+#LEGEND_SHAPES 1 1 2 2
+#LEGEND_COLORS #ff0000 #00ff00 rgba(0,255,0,0.5) #0000ff
+#LEGEND_LABELS value1 value2 value3 value4
+#LEGEND_SHAPE_SCALES 1 1 0.5 1
+
+#width of the colored strip
+#STRIP_WIDTH 25
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 0
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#if set to 1, border will be drawn completely around each colored strip box
+#COMPLETE_BORDER 0
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#display or hide the individual label inside each colored strip (when defined in the data below)
+#SHOW_STRIP_LABELS 1
+
+#position of the strip label within the box; 'top', 'center' or 'bottom'
+#STRIP_LABEL_POSITION center
+
+#strip label size factor (relative to the tree leaf labels)
+#STRIP_LABEL_SIZE_FACTOR 1
+
+
+#rotation of the strip labels; used only in rectangular tree display mode
+#STRIP_LABEL_ROTATION 0
+
+#strip label shift in pixels (positive or negative)
+#STRIP_LABEL_SHIFT 0
+
+#STRIP_LABEL_COLOR #000000
+
+#draw a black outline around the text (width in pixels)
+#STRIP_LABEL_OUTLINE 0.5
+
+#calculate the label color automatically (black or white), based on the darkness of the color strip
+#STRIP_LABEL_AUTO_COLOR 0
+
+#display or hide the dataset label above the colored strip
+#SHOW_LABELS 1
+
+#dataset label size factor
+#SIZE_FACTOR 1
+
+#dataset label rotation
+#LABEL_ROTATION 0
+
+#dataset label shift in pixels (positive or negative)
+#LABEL_SHIFT 0
+
+#align the dataset label to the tree circle; only applies in circular display mode
+#LABEL_ALIGN_TO_TREE,0
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+
+#Examples:
+#assign a red colored strip to leaf 9606, with label 'Human'
+#9606 #ff0000 Human
+
+TE_00000294_INT #FF0000 Athila RT
+TE_00000298_INT #FF0000 Athila RT
+TE_00000299_INT #FF0000 Athila RT
+TE_00000364_INT #FF0000 Athila RT
+TE_00000383_INT #FF0000 Athila RT
+TE_00000395_INT #FF0000 Athila RT
+TE_00000397_INT #FF0000 Athila RT
+TE_00000421_INT #FF0000 Athila RT
+TE_00000436_INT #FF0000 Athila RT
+TE_00000453_INT #FF0000 Athila RT
+TE_00000473_INT #FF0000 Athila RT
+TE_00000505_INT #FF0000 Athila RT
+TE_00000529_INT #FF0000 Athila RT
+TE_00000558_INT #FF0000 Athila RT
+TE_00000578_INT #FF0000 Athila RT
+TE_00000585_INT #FF0000 Athila RT
+TE_00000601_INT #FF0000 Athila RT
+TE_00000608_INT #FF0000 Athila RT
+TE_00000639_INT #FF0000 Athila RT
+TE_00000649_INT #FF0000 Athila RT
+TE_00000658_INT #FF0000 Athila RT
+TE_00000717_INT #FF0000 Athila RT
+TE_00000750_INT #FF0000 Athila RT
+TE_00000754_INT #FF0000 Athila RT
+TE_00000781_INT #FF0000 Athila RT
+TE_00000802_INT #FF0000 Athila RT
+TE_00000835_INT #FF0000 Athila RT
+TE_00000859_INT #FF0000 Athila RT
+TE_00000864_INT #FF0000 Athila RT
+TE_00000901_INT #FF0000 Athila RT
+TE_00000319_INT #00FF00 CRM RT
+TE_00000338_INT #00FF00 CRM RT
+TE_00000401_INT #00FF00 CRM RT
+TE_00000448_INT #00FF00 CRM RT
+TE_00000466_LTR #00FF00 CRM RT
+TE_00000475_INT #00FF00 CRM RT
+TE_00000481_INT #00FF00 CRM RT
+TE_00000520_INT #00FF00 CRM RT
+TE_00000531_INT #00FF00 CRM RT
+TE_00000591_LTR #00FF00 CRM RT
+TE_00000652_INT #00FF00 CRM RT
+TE_00000691_LTR #00FF00 CRM RT
+TE_00000756_INT #00FF00 CRM RT
+TE_00000768_INT #00FF00 CRM RT
+TE_00000832_LTR #00FF00 CRM RT
+TE_00000920_INT #00FF00 CRM RT
+TE_00000078_INT #0000FF Reina RT
+TE_00000211_INT #0000FF Reina RT
+TE_00000306_INT #0000FF Reina RT
+TE_00000340_INT #0000FF Reina RT
+TE_00000341_INT #0000FF Reina RT
+TE_00000406_INT #0000FF Reina RT
+TE_00000411_INT #0000FF Reina RT
+TE_00000415_INT #0000FF Reina RT
+TE_00000418_INT #0000FF Reina RT
+TE_00000419_INT #0000FF Reina RT
+TE_00000460_INT #0000FF Reina RT
+TE_00000472_INT #0000FF Reina RT
+TE_00000527_INT #0000FF Reina RT
+TE_00000555_INT #0000FF Reina RT
+TE_00000621_INT #0000FF Reina RT
+TE_00000650_INT #0000FF Reina RT
+TE_00000683_INT #0000FF Reina RT
+TE_00000749_INT #0000FF Reina RT
+TE_00000758_INT #0000FF Reina RT
+TE_00000848_INT #0000FF Reina RT
+TE_00000864_INT #0000FF Reina RT
+TE_00000900_INT #0000FF Reina RT
+TE_00000018_INT #00FFFF Retand RT
+TE_00000039_INT #00FFFF Retand RT
+TE_00000176_INT #00FFFF Retand RT
+TE_00000221_INT #00FFFF Retand RT
+TE_00000295_INT #00FFFF Retand RT
+TE_00000369_INT #00FFFF Retand RT
+TE_00000464_INT #00FFFF Retand RT
+TE_00000467_INT #00FFFF Retand RT
+TE_00000549_INT #00FFFF Retand RT
+TE_00000559_INT #00FFFF Retand RT
+TE_00000695_INT #00FFFF Retand RT
+TE_00000707_INT #00FFFF Retand RT
+TE_00000711_INT #00FFFF Retand RT
+TE_00000746_INT #00FFFF Retand RT
+TE_00000762_INT #00FFFF Retand RT
+TE_00000852_INT #00FFFF Retand RT
+TE_00000873_INT #00FFFF Retand RT
+TE_00000885_INT #00FFFF Retand RT
+TE_00000291_INT #FFFF00 Tekay RT
+TE_00000423_INT #FFFF00 Tekay RT
+TE_00000809_INT #FFFF00 Tekay RT
+TE_00000914_INT #FFFF00 Tekay RT
+TE_00000518_INT #c515d1 unknown RT
+TE_00000619_INT #c515d1 unknown RT
+TE_00000662_INT #c515d1 unknown RT
+TE_00000799_INT #c515d1 unknown RT
+ATHILA0_I #FF0000 Athila RT
+ATHILA2_I #FF0000 Athila RT
+ATHILA3_I #FF0000 Athila RT
+ATHILA4C_I #FF0000 Athila RT
+ATHILA4D_I #FF0000 Athila RT
+ATHILA4_I #FF0000 Athila RT
+ATHILA5_I #FF0000 Athila RT
+ATHILA6A_I #FF0000 Athila RT
+ATHILA6B_I #FF0000 Athila RT
+ATHILA6C_I #FF0000 Athila RT
+ATHILA7A_I #FF0000 Athila RT
+ATHILA7_I #FF0000 Athila RT
+ATHILA8A_I #FF0000 Athila RT
+ATHILA8B_I #FF0000 Athila RT
+ATHILA_I #FF0000 Athila RT
+Gypsy-2_EPa-I #FF0000 Athila RT
+Gypsy-31_ALY-I #FF0000 Athila RT
+Gypsy-34_ALy-I #FF0000 Athila RT
+Gypsy-43_BRa-I #FF0000 Athila RT
+Gypsy-44_BRa-I #FF0000 Athila RT
+Gypsy-4_EPa-I #FF0000 Athila RT
+Gypsy-5_ALY-I #FF0000 Athila RT
+ATGP11_I #00FF00 CRM RT
+ATGP5A_I #00FF00 CRM RT
+ATGP5A_LTR #00FF00 CRM RT
+ATGP5I #00FF00 CRM RT
+ATGP6I #00FF00 CRM RT
+ATGP6LTR #00FF00 CRM RT
+ATGP7I #00FF00 CRM RT
+ATGP7LTR #00FF00 CRM RT
+Gypsy-10_BRa-I #00FF00 CRM RT
+Gypsy-11_BRa-I #00FF00 CRM RT
+Gypsy-12_ALY-I #00FF00 CRM RT
+Gypsy-12_ALY-LTR #00FF00 CRM RT
+Gypsy-13_ALY-I #00FF00 CRM RT
+Gypsy-13_ALY-LTR #00FF00 CRM RT
+Gypsy-14_ALY-I #00FF00 CRM RT
+Gypsy-15_BRa-I #00FF00 CRM RT
+Gypsy-17_ALY-I #00FF00 CRM RT
+Gypsy-18_BRa-I #00FF00 CRM RT
+Gypsy-19_BRa-I #00FF00 CRM RT
+Gypsy-1_ALY-I #00FF00 CRM RT
+Gypsy-1_EPa-I #00FF00 CRM RT
+Gypsy-1_EPa-LTR #00FF00 CRM RT
+Gypsy-20_ALY-I #00FF00 CRM RT
+Gypsy-20_ALY-LTR #00FF00 CRM RT
+Gypsy-22_ALY-I #00FF00 CRM RT
+Gypsy-23_BRa-I #00FF00 CRM RT
+Gypsy-24_ALY-I #00FF00 CRM RT
+Gypsy-24_BRa-I #00FF00 CRM RT
+Gypsy-27_BRa-I #00FF00 CRM RT
+Gypsy-28_ALY-I #00FF00 CRM RT
+Gypsy-2_ALY-I #00FF00 CRM RT
+Gypsy-2_ALY-LTR #00FF00 CRM RT
+Gypsy-2_BRa-I #00FF00 CRM RT
+Gypsy-2_EPa-I #00FF00 CRM RT
+Gypsy-2_EPa-LTR #00FF00 CRM RT
+Gypsy-32_ALY-I #00FF00 CRM RT
+Gypsy-36_ALy-I #00FF00 CRM RT
+Gypsy-36_ALy-LTR #00FF00 CRM RT
+Gypsy-45_BRa-I #00FF00 CRM RT
+Gypsy-45_BRa-LTR #00FF00 CRM RT
+Gypsy-6_EPa-I #00FF00 CRM RT
+Gypsy-6_EPa-LTR #00FF00 CRM RT
+Gypsy-9_ALY-I #00FF00 CRM RT
+Gypsy-9_EPa-I #00FF00 CRM RT
+Gypsy-9_EPa-LTR #00FF00 CRM RT
+Gypsy-31_BRa-I #800000 Galadriel RT
+ATGP3A_I #0000FF Reina RT
+ATGP3B_I #0000FF Reina RT
+ATGP3I #0000FF Reina RT
+ATGP4_I #0000FF Reina RT
+ATGP9BI #0000FF Reina RT
+Gypsy-12_BRa-I #0000FF Reina RT
+Gypsy-13_BRa-I #0000FF Reina RT
+Gypsy-14_BRa-I #0000FF Reina RT
+Gypsy-15_ALY-I #0000FF Reina RT
+Gypsy-16_ALY-I #0000FF Reina RT
+Gypsy-16_BRa-I #0000FF Reina RT
+Gypsy-17_BRa-I #0000FF Reina RT
+Gypsy-19_ALY-I #0000FF Reina RT
+Gypsy-1_BRa-I #0000FF Reina RT
+Gypsy-21_BRa-I #0000FF Reina RT
+Gypsy-22_BRa-I #0000FF Reina RT
+Gypsy-25_BRa-I #0000FF Reina RT
+Gypsy-26_ALY-I #0000FF Reina RT
+Gypsy-26_BRa-I #0000FF Reina RT
+Gypsy-27_ALY-I #0000FF Reina RT
+Gypsy-28_BRa-I #0000FF Reina RT
+Gypsy-29_ALY-I #0000FF Reina RT
+Gypsy-29_BRa-I #0000FF Reina RT
+Gypsy-30_BRa-I #0000FF Reina RT
+Gypsy-32_BRa-I #0000FF Reina RT
+Gypsy-33_BRa-I #0000FF Reina RT
+Gypsy-34_BRa-I #0000FF Reina RT
+Gypsy-35_ALy-I #0000FF Reina RT
+Gypsy-35_BRa-I #0000FF Reina RT
+Gypsy-36_BRa-I #0000FF Reina RT
+Gypsy-37_BRa-I #0000FF Reina RT
+Gypsy-38_BRa-I #0000FF Reina RT
+Gypsy-39_BRa-I #0000FF Reina RT
+Gypsy-3_BRa-I #0000FF Reina RT
+Gypsy-3_EPa-I #0000FF Reina RT
+Gypsy-40_BRa-I #0000FF Reina RT
+Gypsy-41_BRa-I #0000FF Reina RT
+Gypsy-41_BRa-LTR #0000FF Reina RT
+Gypsy-46_BRa-I #0000FF Reina RT
+Gypsy-48_BRa-I #0000FF Reina RT
+Gypsy-4_BRa-I #0000FF Reina RT
+Gypsy-5_BRa-I #0000FF Reina RT
+Gypsy-5_EPa-I #0000FF Reina RT
+Gypsy-6_ALY-I #0000FF Reina RT
+Gypsy-6_BRa-I #0000FF Reina RT
+Gypsy-7_ALY-I #0000FF Reina RT
+Gypsy-7_BRa-I #0000FF Reina RT
+Gypsy-7_EPa-I #0000FF Reina RT
+Gypsy-8_BRa-I #0000FF Reina RT
+Gypsy-8_EPa-I #0000FF Reina RT
+Gypsy-9_BRa-I #0000FF Reina RT
+ATLANTYS1_I #00FFFF Retand RT
+ATLANTYS2_I #00FFFF Retand RT
+ATLANTYS3I #00FFFF Retand RT
+Gypsy-10_ALY-I #00FFFF Retand RT
+Gypsy-11_ALY-I #00FFFF Retand RT
+Gypsy-15_AT-I #00FFFF Retand RT
+Gypsy-18_ALY-I #00FFFF Retand RT
+Gypsy-20_BRa-I #00FFFF Retand RT
+Gypsy-21_ALY-I #00FFFF Retand RT
+Gypsy-30_ALY-I #00FFFF Retand RT
+Gypsy-33_ALY-I #00FFFF Retand RT
+Gypsy-3_ALY-I #00FFFF Retand RT
+Gypsy-42_BRa-I #00FFFF Retand RT
+Gypsy-46_ALy-I #00FFFF Retand RT
+Gypsy-4_ALY-I #00FFFF Retand RT
+Gypsy-8_ALY-I #00FFFF Retand RT
+ATGP10_I #FFFF00 Tekay RT
+ATGP1I #FFFF00 Tekay RT
+ATGP2I #FFFF00 Tekay RT
+ATGP8I #FFFF00 Tekay RT
+BNINTMO #FFFF00 Tekay RT
+Gypsy-23_ALY-I #FFFF00 Tekay RT
+Gypsy-25_ALY-I #FFFF00 Tekay RT
+Gypsy-47_BRa-I #FFFF00 Tekay RT
+Gypsy-4_EPa-LTR #c515d1 unknown RT
